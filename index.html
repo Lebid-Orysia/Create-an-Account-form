@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Create an account</title>
+</head>
+
+<body>
+    <section class="create__account">
+        <h2>Create an Account</h2>
+        <form action="" class="create__account-form">
+
+            <div class="form__name">
+                <label class="roboto__regular" for="firs-name">First Name
+                    <input type="text" id="firs-name" name="text" required class="form__name-first inter__regular">
+                </label>
+
+                <label class="roboto__regular" for="last-name">Last Name
+                    <input type="text" id="last-name" name="text" required class="form__name-second inter__regular">
+                </label>
+
+            </div>
+
+            <label class="roboto__regular" for="email">E-mail</label>
+            <input type="email" name="email" id="email" required class="form__email inter__regular">
+        </form>
+        <p class="email__paragraf">We'll never share your email with anyone else.</p>
+
+        <label class="roboto__regular label__gender">
+            <input type="radio" name="gender" value="male">
+            Male
+        </label>
+
+        <label class="roboto__regular label__gender">
+            <input type="radio" name="gender" value="female">
+            Female
+        </label><br>
+
+        <form action="" class="form__country">
+            <div>
+                <label class="roboto__regular" for="country">Country
+                    <select name="country" required class="country inter__regular arrow-select">
+                        <option value="">Select</option>
+                        <option value="ua">Україна</option>
+                        <option value="pl">Польща</option>
+                        <option value="de">Німеччина</option>
+                        <option value="us">США</option>
+                        <option value="ca">Канада</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <div>
+                <label class="roboto__regular" for="text">City
+                    <input type="text" id="text" name="text" required class="city inter__regular">
+                </label>
+            </div>
+        </form>
+
+        <button type="submit" class="btn__submit roboto__bold">Sign Up</button><br>
+        <p class="sign-up__paragraf">By clicking the 'Sign Up' button, you confirm that you accept our
+            <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
+        </p>
+        <hr>
+        <div class="log-in__anchor">
+            <span class="roboto__regular ">Have an account?</span>
+            <a href="" class="roboto__bold">Log In</a>
+        </div>
+
+    </section>
+
+    <section class="profile">
+        <h2>Profile</h2>
+
+        <div class="profile__items">
+            <img src="svg" alt="your foto">
+            <div class="profile__info">
+                <label for="photo" class="label__photo"><img src="1. Buttons/Photo Camera.svg" alt="">
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </label>
+                <button type="reset" id="reset"><img src="1. Buttons/🔹 Icon Color.svg" alt=""></button>
+                <span class="text__tip">Up to 1 MB (300x300 px)</span>
+            </div>
+        </div>
+
+        <form action="" class="create__account-form">
+            <div class="form__name">
+                <label class="roboto__regular" for="text">Name
+                    <input type="text" id="text" name="text" required class="form__name-first inter__regular">
+                </label>
+                <label class="roboto__regular" for="email">E-mail
+                    <input type="email" name="email" id="email" required class="form__name-second inter__regular">
+                </label>
+            </div>
+        </form>
+
+        <form action="" class="form__country">
+            <label for="country" class="roboto__regular">Country
+                <select id="country" name="country" required class="country inter__regular arrow-select">
+                    <option value="">Select</option>
+                    <option value="ua">Україна</option>
+                    <option value="pl">Польща</option>
+                    <option value="de">Німеччина</option>
+                    <option value="us">США</option>
+                    <option value="ca">Канада</option>
+                </select>
+            </label>
+            <label class="roboto__regular" for="text">City
+                <input type="text" id="text" name="text" required class="city inter__regular">
+            </label>
+        </form>
+
+        <form action="" class="create__account-form">
+            <div class="form__name">
+                <label for="zip" class="roboto__regular">Zip Code
+                    <input type="text" id="zip" name="zip" required class="form__name-first inter__regular">
+                </label>
+                <label for="phone" class="roboto__regular">Phone Number
+                    <input type="tel" id="phone" name="phone" required class="form__name-second inter__regular">
+                </label>
+            </div>
+        </form>
+
+        <button type="submit" class="btn__submit roboto__bold" style="width: 150px;">Update</button>
+
+    </section>
+</body>
+
+</html>

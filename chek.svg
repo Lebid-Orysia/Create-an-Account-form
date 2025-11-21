@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Зовнішній синій круг -->
+  <circle cx="12" cy="12" r="12" fill="#3B82F6"/>
+  <!-- Внутрішній білий круг (менший) -->
+  <circle cx="12" cy="12" r="3" fill="#FFFFFF"/>
+</svg>
+

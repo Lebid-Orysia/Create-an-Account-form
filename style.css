@@ -117,6 +117,33 @@ body {
     margin: 0 0 20px 36px;
 }
 
+.label__gender input {
+    position: absolute;
+    opacity: 0;
+}
+
+.label__gender div {
+    vertical-align: middle;
+}
+
+.label__gender span div {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: 0.2s;
+    background-position: center;
+}
+
+.label__gender input:checked+span div {
+    border-color: transparent;
+    background-image: url("chek.svg");
+    width: 20px;
+    height: 20px;
+}
+
 .form__country {
     display: flex;
     gap: 10px;
